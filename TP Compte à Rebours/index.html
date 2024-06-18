@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Compte à Rebours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="container">
+        
+        <!----------------------Titre et instructions------------------->
+
+        <h1>&nbsp;Compte à Rebours&nbsp;</h1>
+        
+        <h2>Choisir une durée...<br>...puis démarrer :</h2>
+
+        <!------------Formulaire pour le choix de l'utilisateur--------->
+
+        <div id="choixDurée">
+            <label for="heures">Heures :</label>
+            <input type="number" id="choixHeures" placeholder="Heures">
+            <label for="minutes">Minutes :</label>
+            <input type="number" id="choixMinutes" placeholder="Minutes">
+            <label for="secondes">Secondes :</label>
+            <input type="number" id="choixSecondes" placeholder="Secondes">
+            </div>
+            
+        <!-----------------Création du compte à rebours-------------->
+
+            <div id="compteur">
+                    <span id="heures">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="secondes">00</span>
+            </div>
+
+        <!--------Bouton de démarrage du compte à rebours----------->
+    
+        <div id="boutonStart">
+            <button id="choiceTemp" type="button">Démarrer</button>
+            </div>
+
+        <!--------Boutons marche/arrêt du compte à rebours---------->
+
+            <div id="boutonPlayStop">
+            <button id="stop" type="button">Stop</button>
+            <button id="play" type="button">Redémarrer</button>
+            </div>
+
+        <!-----Bouton pour réinitialiser le compte à rebours------->
+
+            <div id="raz">
+            <button id="zero" type="button">Remettre à Zéro</button>
+            </body>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

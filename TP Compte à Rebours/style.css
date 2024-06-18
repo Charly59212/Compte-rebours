@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(193, 153, 230);
+}
+
+/*Conteneur principal*/
+
+#container {
+    margin-top: 5vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+/*Titre et Instructions*/
+
+h1 {
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    font-size: 35px;
+    color: rgb(236, 236, 244);
+    background-color: rgb(95, 127, 117);
+    box-shadow: 2px 2px 15px 10px rgb(100, 125, 128);
+}
+
+h2 {
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 5vh;
+    color: rgb(116, 43, 172);
+}
+
+/*Choix de la durée*/
+
+#choixDurée input {
+    margin: 2px;
+    padding: 2px;
+    font-size: 1.5vw;
+    width: 8vw;
+    height: 4vh;
+    text-align: center;
+}
+
+label {
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(48, 41, 41);
+}
+
+/*Affichage du compte à rebours*/
+
+#compteur {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Dimensions des boutons*/
+
+#boutonStart,
+#boutonPlayStop,
+#raz {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+/*Animation des boutons au survol de la souris*/
+
+#choiceTemp:hover {
+    background-color: rgb(11, 131, 131);
+    transition: 0.7s;
+}
+
+#stop:hover {
+    background-color: rgb(220, 39, 39);
+    transition: 0.7s;
+}
+
+#play:hover {
+    background-color: rgb(6, 115, 30);
+    transition: 0.7s;
+}
+
+#zero:hover {
+    background-color: rgb(102, 30, 158);
+    transition: 0.7s;
+}
+
+/*Design des boutons*/
+#stop,
+#play,
+#zero,
+#choiceTemp {
+    background-color: rgb(52, 92, 167);
+    border: 2px solid white;
+    box-shadow: 1px 1px 1px 5px rgb(198, 198, 70);
+    color: white;
+    width: 150px;
+    height: 7vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/*Media Queries Téléphones*/
+
+@media (max-width:810px) {
+
+    label {
+        font-size: 12px;
+    }
+
+    #choixDurée input {
+        width: 13vw;
+        font-size: 1.8vw;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #stop,
+    #play,
+    #zero,
+    #choiceTemp {
+        width: 28vw;
+        height: 7vh;
+    }
+
+}
